@@ -1,0 +1,33 @@
+.activities {
+  padding-bottom: 94px;
+  display: none;
+@media screen and (min-width:1200px) {
+   display: block;
+}}
+
+.activities-list {
+  display: flex;
+  flex-basis: calc((100% - 60px) / 3);
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.activities-list__item {
+  position: relative;
+}
+
+.activities-list__title {
+  width: 370px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+  transform: translateY(-100%);
+}
