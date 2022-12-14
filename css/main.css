@@ -21,10 +21,6 @@ body {
   height: 100%;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -135,8 +131,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 300px;
+  min-height: 459px;
   padding: 40px;
   background-color: #fff;
   -webkit-transform-origin: center;
@@ -154,14 +150,32 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(0) rotate(0deg);
           transform: translate(-50%, -50%) scale(0) rotate(0deg);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 }
 
 .modal-button {
@@ -312,39 +326,49 @@ img {
 
 .form-agree {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   margin-bottom: 30px;
-}
-
-.form-agree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .form-agree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-agree {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .form-agree-link {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
   padding-left: 3px;
 }
+@media screen and (min-width: 1200px) {
+  .form-agree-link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .agree-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 13px;
   border: 1.8px solid var(--secondary-text-color);
   border-radius: 2px;
   margin-right: 7px;
@@ -354,6 +378,15 @@ img {
   fill: var(--main-white-color);
   background-color: var(--accent-color);
   border: none;
+}
+@media screen and (min-width: 480px) {
+  .agree-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 15px;
+  }
 }
 
 .form-button {
@@ -406,12 +439,26 @@ img {
 }
 
 .nav {
-  margin-left: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+    margin-right: 315px;
+    gap: 50px;
+  }
 }
 
 .nav a {
@@ -449,11 +496,33 @@ img {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .contacts a {
@@ -490,7 +559,12 @@ img {
 }
 
 .contacts-item {
-  margin-right: 30px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-item {
+    margin-right: 30px;
+  }
 }
 
 .menu-button {
@@ -525,7 +599,7 @@ img {
   -webkit-transition: fill 250ms var(--transition-cubic);
   transition: fill 250ms var(--transition-cubic);
 }
-.menu-button:hover .menu-open-icon {
+.menu-button:active .menu-open-icon {
   fill: var(--accent-color);
 }
 
@@ -567,12 +641,8 @@ img {
   text-decoration: none;
 }
 
-.mob-nav-item:not(:last-child) {
+.mob-nav-item {
   margin-bottom: 32px;
-}
-
-.mob-nav-item:last-child {
-  margin-bottom: 306px;
 }
 
 .mob-nav-link {
