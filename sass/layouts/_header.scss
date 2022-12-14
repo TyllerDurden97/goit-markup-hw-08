@@ -2,18 +2,19 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
-& .container {
+      & .container {
       display: flex;
       align-items: center;
    }
-}
+   }
+// }
 
+// .header .nav {
+//   display: flex;
+//   gap: 50px;
 
-
-.header .nav {
-  display: flex;
-  gap: 50px;
-}
+//    display: none;
+// }
 
 .logo {
   color: var(--accent-color);
@@ -35,6 +36,11 @@
 
 .nav {
   margin-left: 93px;
+
+   display: flex;
+      gap: 50px;
+   
+      display: none;
 }
 
 .nav a {
@@ -74,6 +80,15 @@
   color: var(--accent-color);
 }
 
+.contacts {
+   display: flex;
+      margin-left: auto;
+
+
+   display: none;
+   // display: flex;
+}
+
 
 
 .contacts a {
@@ -107,11 +122,194 @@
 
 
 
-.header .contacts {
-  display: flex;
-  margin-left: auto;
-}
+// .header .contacts {
+//   display: flex;
+//   margin-left: auto;
+// }
 
 .contacts-item {
   margin-right: 30px;
 }
+
+.menu-button {
+   border: 0;
+      margin-left: auto;
+      padding: 0;
+      display: inline-block;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 111;
+      @media screen and (min-width: 768px) {
+            display: none;
+         }
+}
+
+
+.menu-button .icon-open {
+   display: none;
+}
+
+.menu-button.is-open .icon-open {
+   display: block;
+}
+
+.menu-button.is-open .icon-close {
+   display: none;}
+
+
+
+.menu-open-icon {
+   fill: var(--secondary-text-color);
+   transition: fill 250ms var(--transition-cubic);
+
+   .menu-button:hover & {
+      fill: var(--accent-color);
+   }
+
+   // .menu-button:focus & {
+   //    fill: var(--accent-color);
+   // }
+}
+
+.mob-menu {
+   position: fixed;
+   top: 0;
+   overflow: auto;
+   z-index: 1;
+   width: 100vw;
+   height: 100vh;
+   padding: 28px 20px;
+   background-color: #ffffff;
+   // display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   @media screen and (min-width: 480px) {
+   padding: 48px 40px;
+      }
+   display: none;
+
+   &.is-open {
+      display: flex;
+   }
+   @media screen and (min-width: 768px) {
+         display: none;
+   }
+      
+   }
+
+.mob-nav a{
+   text-decoration: none;
+}
+
+.mob-nav-item:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.mob-nav-item:last-child {
+   margin-bottom: 306px;
+}
+
+.mob-nav-link {
+color: var(--secondary-text-color);
+   font-weight: 500;
+   font-size: 30px;
+      line-height: 1.17;
+   letter-spacing: 0.02em;
+   width: 100%;
+   position: relative;
+   transition: color 250ms var(--transition-cubic);
+
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+   }  
+      @media screen and (min-width: 480px) {
+   font-size: 40px;
+      }
+}
+
+// .mob-contacts-group{
+//    background-color: rgb(214, 81, 185);
+// }
+
+.mob-tel {
+   color: var(--accent-color);
+   font-weight: 500;
+   font-size: 26px;
+      line-height: 1.18;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   margin-bottom: 32px;
+   display: flex;
+   // justify-content: center;
+   // align-items: center;
+   @media screen and (min-width: 480px) {
+         font-size: 34px;
+      }
+}
+
+.mob-mail {
+   color: var(--primari-text-color);
+   font-weight: 500;
+   font-size: 20px;
+      line-height: 1.7;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   display: flex;
+   margin-bottom: 64px;
+   // justify-content: center;
+   // align-items: center;
+   @media screen and (min-width: 480px) {
+         font-size: 24px;
+      }
+}
+
+
+.mob-contacts {
+   margin-right: 10px;
+   fill: currentColor;
+   transition: fill 250ms var(--transition-cubic);
+
+   &:hover,
+   &:focus {
+      fill: var(--accent-color);
+   }
+}
+
+.mob-soc {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 48px;
+}
+
+   // .mob-soc:last-child .mob-soc-link::after{
+       
+   //       display: none;}
+   
+
+.mob-soc-link {
+         // display: block;
+      text-decoration: none;
+      font-weight: 500;
+         font-size: 15px;
+         line-height: 1.22;
+         letter-spacing: 0.02em;
+         color: var(--accent-color);
+         margin-right: 5px;
+         cursor: pointer;
+         @media screen and (min-width: 480px) {
+               font-size: 18px;
+               margin-right: 10px;
+            }
+}
+
+.mob-soc-item:not(:last-child):after{
+   content: '';
+      width: 22px;
+   border-right: 1px solid rgba(33, 33, 33, 0.2);
+margin-right: 5px;
+@media screen and (min-width: 480px) {
+               margin-right: 10px;   }
+}
+
+
