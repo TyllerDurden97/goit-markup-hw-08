@@ -5,8 +5,12 @@
       & .container {
       display: flex;
       align-items: center;
-        }
-   }
+      }                  
+         @media screen and (min-width: 768px) 
+         and (max-width: 1199px) {
+                     padding-bottom: 19px;
+                  }}
+            
 // }
 
 // .header .nav {
@@ -63,11 +67,10 @@
   padding-bottom: 32px;
   position: relative;
   transition: color 250ms var(--transition-cubic);
-
 &:hover,
    &:focus {
-      color: var(--accent-color);
-   }
+      color: var(--accent-color);  
+       }
       &.current::after {
          content: '';
          display: block;
@@ -77,8 +80,7 @@
          border-radius: 2px;
          position: absolute;
          bottom: 0;
-      }
-}
+        }}
 
 
 
@@ -144,44 +146,39 @@
 .contacts-item {
 margin-bottom: 10px;
 @media screen and (min-width: 1200px) {
-     margin-right: 30px;}
+     margin-right: 30px;
+   margin-bottom: 0;}
 
 }
 
+// ------------------Мобільне меню-------------------------------------
 
-.menu-button {
+
+.open-button {
    border: 0;
       margin-left: auto;
       padding: 0;
       display: inline-block;
       background-color: transparent;
       cursor: pointer;
-      z-index: 111;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 767px) {      
             display: none;
          }
 }
 
 
-.menu-button .icon-open {
-   display: none;
-}
-
-.menu-button.is-open .icon-open {
-   display: block;
-}
-
-.menu-button.is-open .icon-close {
-   display: none;}
 
 
-.menu-open-icon {
+.menu-icon {
    fill: var(--secondary-text-color);
    transition: fill 250ms var(--transition-cubic);
 
-   .menu-button:active & {
+   .open-button:active & {
       fill: var(--accent-color);
    } 
+      .close-button:active & {
+         fill: var(--accent-color);
+      }
 }
 
 .mob-menu {
@@ -193,21 +190,36 @@ margin-bottom: 10px;
    height: 100vh;
    padding: 28px 20px;
    background-color: #ffffff;
-   // display: flex;
+   display: flex;
    flex-direction: column;
    justify-content: space-between;
    @media screen and (min-width: 480px) {
    padding: 48px 40px;
       }
-   display: none;
+            @media screen and (min-width: 767px) {
 
-   &.is-open {
-      display: flex;
+   display: none;}
+
+   // &.is-open {
+   //    display: flex;
+   // }
+   // @media screen and (min-width: 768px) {
+   //       display: none;
+   // }      
    }
-   @media screen and (min-width: 768px) {
-         display: none;
-   }      
-   }
+
+      .close-button {
+         border: 0;
+         // margin-left: auto;
+         padding: 0;
+         display: block;
+         background-color: transparent;
+         cursor: pointer;
+
+         position: absolute;
+         top: 10px;
+         right: 15px;
+      }
 
 .mob-nav a{
    text-decoration: none;
@@ -228,7 +240,7 @@ color: var(--secondary-text-color);
       line-height: 1.17;
    letter-spacing: 0.02em;
    width: 100%;
-   position: relative;
+   // position: relative;
    transition: color 250ms var(--transition-cubic);
 
    &:hover,

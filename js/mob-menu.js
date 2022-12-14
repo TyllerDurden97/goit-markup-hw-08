@@ -1,13 +1,18 @@
-
 (() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-   const mobileMenuRef = document.querySelector("[data-menu]");
-   const bodyNoScroll = document.querySelector("body");
+  const refs = {
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+     menu: document.querySelector("[data-menu]"),
+        body: document.querySelector("body"),
 
-  menuBtnRef.addEventListener("click", () => {  
+  };
 
-    menuBtnRef.classList.toggle("is-open");    
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
 
-    mobileMenuRef.classList.toggle("is-open");
-  });
+  function toggleMenu() {
+     refs.menu.classList.toggle("is-hidden");
+         refs.body.classList.toggle("no-scroll");
+
+  }
 })();
