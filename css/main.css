@@ -75,7 +75,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -866,7 +865,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1640,14 +1638,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* outline: 2px solid violet; */
   position: absolute;
   top: 10%;
   color: #ffffff;
 }
 
 .temp-blink {
-  /* outline: 2px solid rgb(221, 142, 23); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

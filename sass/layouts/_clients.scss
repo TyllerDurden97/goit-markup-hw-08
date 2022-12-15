@@ -3,10 +3,6 @@
    display: flex;
       flex-wrap: wrap;
       gap: 30px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 30px;
 }
 
 .clients-list__item {
@@ -34,7 +30,6 @@ flex-basis: calc((100% - 30px)/2);
       border-color: var(--accent-color);
       cursor: pointer;
    }
-
 }
 
 .clients-list__icon {

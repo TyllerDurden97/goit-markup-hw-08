@@ -43,11 +43,9 @@
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
-@media screen and (min-width: 480px) {
+   @media screen and (min-width: 480px) {
    font-size: 20px;
    margin-bottom: 12px;}
-
-
 }
 
 .modal-button {
@@ -66,7 +64,6 @@
   background-color: var(--main-white-color);
   outline: transparent;
 }
-
 
 .modal-svg {
   fill: #000000;

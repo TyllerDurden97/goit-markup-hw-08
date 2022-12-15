@@ -9,16 +9,7 @@
          @media screen and (min-width: 768px) 
          and (max-width: 1199px) {
                      padding-bottom: 19px;
-                  }}
-            
-// }
-
-// .header .nav {
-//   display: flex;
-//   gap: 50px;
-
-//    display: none;
-// }
+                  }}      
 
 .logo {
   color: var(--accent-color);
@@ -83,7 +74,6 @@
         }}
 
 
-
 .current {
   color: var(--accent-color);
 }
@@ -101,11 +91,6 @@
                   @media screen and (min-width: 1200px) {
                      display: flex;
                      flex-direction: row;}}
-                        // margin-left: auto;}}
-
-
-
-
 
 .contacts a {
   color: var(--primari-text-color);
@@ -124,8 +109,6 @@
    }
 }
 
-
-
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -135,13 +118,6 @@
       fill: var(--accent-color);
    }
 }
-
-
-
-// .header .contacts {
-//   display: flex;
-//   margin-left: auto;
-// }
 
 .contacts-item {
 margin-bottom: 10px;
@@ -165,9 +141,6 @@ margin-bottom: 10px;
             display: none;
          }
 }
-
-
-
 
 .menu-icon {
    fill: var(--secondary-text-color);
@@ -198,24 +171,15 @@ margin-bottom: 10px;
       }
             @media screen and (min-width: 767px) {
 
-   display: none;}
-
-   // &.is-open {
-   //    display: flex;
-   // }
-   // @media screen and (min-width: 768px) {
-   //       display: none;
-   // }      
+   display: none;}      
    }
 
       .close-button {
          border: 0;
-         // margin-left: auto;
          padding: 0;
          display: block;
          background-color: transparent;
          cursor: pointer;
-
          position: absolute;
          top: 10px;
          right: 15px;
@@ -229,10 +193,6 @@ margin-bottom: 10px;
    margin-bottom: 32px;
 }
 
-// .mob-nav-item:last-child {
-//    margin-bottom: 306px;
-// }
-
 .mob-nav-link {
 color: var(--secondary-text-color);
    font-weight: 500;
@@ -240,9 +200,7 @@ color: var(--secondary-text-color);
       line-height: 1.17;
    letter-spacing: 0.02em;
    width: 100%;
-   // position: relative;
    transition: color 250ms var(--transition-cubic);
-
    &:hover,
    &:focus {
       color: var(--accent-color);
@@ -251,10 +209,6 @@ color: var(--secondary-text-color);
    font-size: 40px;
       }
 }
-
-// .mob-contacts-group{
-//    background-color: rgb(214, 81, 185);
-// }
 
 .mob-tel {
    color: var(--accent-color);
@@ -265,8 +219,6 @@ color: var(--secondary-text-color);
    text-decoration: none;
    margin-bottom: 32px;
    display: flex;
-   // justify-content: center;
-   // align-items: center;
    @media screen and (min-width: 480px) {
          font-size: 34px;
       }
@@ -280,20 +232,16 @@ color: var(--secondary-text-color);
    letter-spacing: 0.02em;
    text-decoration: none;
    display: flex;
-   margin-bottom: 64px;
-   // justify-content: center;
-   // align-items: center;
+   margin-bottom: 64px;  
    @media screen and (min-width: 480px) {
          font-size: 24px;
       }
 }
 
-
 .mob-contacts {
    margin-right: 10px;
    fill: currentColor;
    transition: fill 250ms var(--transition-cubic);
-
    &:hover,
    &:focus {
       fill: var(--accent-color);
@@ -305,14 +253,9 @@ color: var(--secondary-text-color);
    flex-direction: row;
    margin-bottom: 48px;
 }
-
-   // .mob-soc:last-child .mob-soc-link::after{
-       
-   //       display: none;}
    
 
 .mob-soc-link {
-         // display: block;
       text-decoration: none;
       font-weight: 500;
          font-size: 15px;
