@@ -169,15 +169,30 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activities-list">
             <li class="activities-list__item">
-              <img src="images/desktop.jpg" alt="Десктопні застосунки" width="370" />
+              <img
+                srcset="images/desktop.jpg 1x, images/desktop-2x.jpg 2x"
+                src="images/desktop.jpg"
+                alt="Десктопні застосунки"
+                width="370"
+              />
               <div class="activities-list__title">Десктопні додатки</div>
             </li>
             <li class="activities-list__item">
-              <img src="images/mobile.jpg" alt="Мобільні додатки" width="370" />
+              <img
+                srcset="images/mobile.jpg 1x, images/mobile-2x.jpg 2x"
+                src="images/mobile.jpg"
+                alt="Мобільні додатки"
+                width="370"
+              />
               <div class="activities-list__title">Мобільні додатки</div>
             </li>
             <li class="activities-list__item">
-              <img src="images/design.jpg" alt="Дизайнерські рішення" width="370" />
+              <img
+                srcset="images/design.jpg 1x, images/design-2x.jpg 2x"
+                src="images/design.jpg"
+                alt="Дизайнерські рішення"
+                width="370"
+              />
               <div class="activities-list__title">Дизайнерські рішення</div>
             </li>
           </ul>
@@ -188,7 +203,21 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img class="team-list__image" src="images/igor.jpg" alt="Ігор" />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/igor-tab-1x.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/igor-mob-1x.jpg 1x, ./images/igor-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/igor-mob-1x.jpg" alt="Ігор Дем'яненко" width="450" />
+              </picture>
               <h3 class="team-list__member">Ігор Дем'яненко</h3>
               <p class="team-list__role">Product Designer</p>
               <ul class="team-soc">
@@ -223,7 +252,21 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__image" src="images/Olga.jpg" alt="Ольга" />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/olga-tab-1x.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/olga-mob-1x.jpg 1x, ./images/olga-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/olga-mob-1x.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>
               <h3 class="team-list__member">Ольга Рєпіна</h3>
               <p class="team-list__role">Frontend Developer</p>
               <ul class="team-soc">
@@ -258,7 +301,21 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__image" src="images/mykola.jpg" alt="Микола" />
+              <picture>
+                <source
+                  srcset="./images/mykola.jpg 1x, ./images/mykola-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mykola-tab-1x.jpg 1x, ./images/mykola-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mykola-mob-1x.jpg 1x, ./images/mykola-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mykola-mob-1x.jpg" alt="Микола Тарасов" width="450" />
+              </picture>
               <h3 class="team-list__member">Микола Тарасов</h3>
               <p class="team-list__role">Marketing</p>
               <ul class="team-soc">
@@ -293,7 +350,21 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img class="team-list__image" src="images/mikhailo.jpg" alt="Михайло" />
+              <picture>
+                <source
+                  srcset="./images/mikhailo.jpg 1x, ./images/mikhailo-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mikhailo-tab-1x.jpg 1x, ./images/mikhailo-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mikhailo-mob-1x.jpg 1x, ./images/mikhailo-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mikhailo-mob-1x.jpg" alt="Михайло Єрмаков" width="450" />
+              </picture>
               <h3 class="team-list__member">Михайло Єрмаков</h3>
               <p class="team-list__role">UI Designer</p>
               <ul class="team-soc">
