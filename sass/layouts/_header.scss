@@ -1,15 +1,19 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
       & .container {
       display: flex;
       align-items: center;
       }                  
          @media screen and (min-width: 768px) 
-         and (max-width: 1199px) {
-                     padding-bottom: 19px;
-                  }}      
+         {
+            padding-top: 21px;
+            padding-bottom: 21px;
+                  }
+         @media screen and (min-width: 1200px)
+      {padding-top: 24px;
+         padding-bottom: 24px;}}      
 
 .logo {
   color: var(--accent-color);
@@ -70,8 +74,12 @@
          background-color: var(--accent-color);
          border-radius: 2px;
          position: absolute;
-         bottom: 0;
-        }}
+         bottom: -2px;
+         @media screen and (min-width: 1200px) {
+               bottom: 0px;
+            }
+        }
+           }
 
 
 .current {
@@ -79,8 +87,6 @@
 }
 
 .contacts {
-   // display: flex;
-   //    margin-left: auto;
    display: none;
    @media screen and (min-width: 768px) {
          display: flex;
